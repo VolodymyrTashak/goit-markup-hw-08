@@ -32,9 +32,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  // .proect-list__item:not(:nth-of-type(2n)) {
-  //   margin-right: 30px;
-  // }
+  .proect-list__item:not(:nth-of-type(2n)) {
+    margin-right: 30px;
+  }
   //     .proect-list__item:nth-child(2n + 1){
   // margin-right: 30px;
   //     }
