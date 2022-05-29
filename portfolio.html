@@ -22,10 +22,16 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header">
+  <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
-        <nav class="header-nav">
+        <button type="button" class="mob-menu__open-btn open-menu" aria-expanded="false">
+          <svg class="mob-menu__open-icon" width="40px" height="40px">
+<use href="./images/icon.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="header-box">
+<nav class="header-nav">
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студия</a>
@@ -33,25 +39,76 @@
             <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
             </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="connect-list list">
           <li class="connect-list__item">
-            <a href="mailto:info@devstudio.com" class="connect-list__link link">
+            <a href="mailto:info@devstudio.com" class="connect-list__link">
               <svg class="connect-list__mail-icon" width="16" height="12">
-                <use href="./images/icon.svg#icon-mail"></use></svg
-              >info@devstudio.com</a
-            >
+                <use href="./images/icon.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="connect-list__item">
-            <a href="tel:+380961111111" class="connect-list__link link">
+            <a href="tel:+380961111111" class="connect-list__link">
               <svg class="connect-list__tel-icon" width="10" height="16">
                 <use href="./images/icon.svg#icon-tel"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
+        </div>
+        
+<div class="mob-menu menu-container">
+<button type="button" class="mob-menu__close-btn close-menu">
+<svg class="mob-menu__open-icon" width="40px" height="40px">
+  <use href="./images/icon.svg#icon-close"></use>
+</svg>
+</button>
+<ul class="mob-menu__list">
+<li class="mob-menu__item">
+<a href="./index.html" class="mob-menu__link">Студия</a>
+</li>
+<li class="mob-menu__item">
+<a href="./portfolio.html" class="mob-menu__link">Портфолио</a>
+</li>
+<li class="mob-menu__item">
+<a href="" class="mob-menu__link">Контакты</a>
+</li>
+</ul>
+<div class="mob-menu__contacts">
+<ul class="mob-contacts">
+              <li class="mob-contacts__item">
+                <a href="tel:+380961111111" class="mob-contacts__link-tel">+38 096 111 11 11 </a>
+              </li>
+              <li class="mob-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mob-contacts__link-mail"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-menu__social">
+              <li class="mob-menu__social-item">
+                <a class="mob-menu__social-link" href="">Instagram</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a class="mob-menu__social-link" href="">Twitter</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a class="mob-menu__social-link" href="">Facebook</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a class="mob-menu__social-link" href="">LinkedIn</a>
+              </li>
+            </ul>
+</div>
+</div>
+</div>
+
       </div>
     </header>
     <main>
@@ -80,7 +137,20 @@
             <li class="proect-list__item">
               <a href="" class="proect-list__link">
                 <div class="proect-list__hov">
-                  <img class="project__img" src="./images.portfolio/Технокряк.jpg" alt="Технокряк" width: 370; />
+                  <picture>
+                    <source srcset="./images.portfolio/Технокряк/Технокряк-desk1x.webp 1x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Технокряк/Технокряк-desk2x.webp 2x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Технокряк/Технокряк-desk1x.jpg 1x,
+                ./images.portfolio/Технокряк/Технокряк-desk2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
+                <source srcset="./images.portfolio/Технокряк/Технокряк-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Технокряк/Технокряк-tab2x.webp 2x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Технокряк/Технокряк-tab1x.jpg 1x,
+                ./images.portfolio/Технокряк/Технокряк-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
+                <source srcset="./images.portfolio/Технокряк/Технокряк-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Технокряк/Технокряк-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Технокряк/Технокряк-mob1x.jpg 1x,
+                ./images.portfolio/Технокряк/Технокряк-mob2x.jpg 2x" type="image/jpg" media="(max-width:767px)"> 
+<img class="project__img" src="./images.portfolio/Технокряк/Технокряк-mob1x.jpg" alt="Технокряк" width: 370; />
                   <p class="proect-list__text-hov">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -96,8 +166,22 @@
             <li class="proect-list__item">
               <a href="" class="proect-list__link">
                 <div class="proect-list__hov">
-                  <img class="project__img" src="./images.portfolio/Постер New Orlean vs Golden Star.jpg" alt="Постер New
+                  <picture>
+                     <source srcset="./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-desk1x.webp 1x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-desk2x.webp 2x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-desk1x.jpg 1x,
+                ./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-desk2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
+                <source srcset="./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-tab2x.webp 2x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-tab1x.jpg 1x,
+                ./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
+                <source srcset="./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-mob1x.jpg 1x,
+                ./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-mob2x.jpg 2x" type="image/jpg" media="(max-width:767px)"> 
+                  <img class="project__img" src="./images.portfolio/Постер New Orlean vs Golden Star/Постер New Orlean vs Golden Star-mob1x.jpg" alt="Постер New
                   Orlean vs Golden Star" width: 370; />
+              </picture>
                   <p class="proect-list__text-hov">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -115,8 +199,22 @@
             <li class="proect-list__item">
               <a href="" class="proect-list__link">
                 <div class="proect-list__hov">
-                  <img class="project__img" src="./images.portfolio/Ресторан Seafood.jpg" alt="Ресторан Seafood" width:
+                   <picture>
+                   <source srcset="./images.portfolio/Ресторан Seafood/Ресторан Seafood-desk1x.webp 1x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Ресторан Seafood/Ресторан Seafood-desk2x.webp 2x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Ресторан Seafood/Ресторан Seafood-desk1x.jpg 1x,
+                ./images.portfolio/Ресторан Seafood/Ресторан Seafood-desk2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
+                <source srcset="./images.portfolio/Ресторан Seafood/Ресторан Seafood-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Ресторан Seafood/Ресторан Seafood-tab2x.webp 2x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Ресторан Seafood/Ресторан Seafood-tab1x.jpg 1x,
+                ./images.portfolio/Ресторан Seafood/Ресторан Seafood-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
+                <source srcset="./images.portfolio/Ресторан Seafood/Ресторан Seafood-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Ресторан Seafood/Ресторан Seafood-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Ресторан Seafood/Ресторан Seafood-mob1x.jpg 1x,
+                 ./images.portfolio/Ресторан Seafood/Ресторан Seafood-mob2x.jpg 2x" type="image/jpg" media="(max-width:767px)"> 
+                   <img class="project__img" src="./images.portfolio/Ресторан Seafood/Ресторан Seafood-mob1x.jpg" alt="Ресторан Seafood" width:
                   370; />
+              </picture>
                   <p class="proect-list__text-hov">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -132,7 +230,21 @@
             <li class="proect-list__item">
               <a href="" class="proect-list__link">
                 <div class="proect-list__hov">
-                  <img class="project__img" src="./images.portfolio/Проект Prime.jpg" alt="Проект Prime" width: 370; />
+                  <picture>
+                     <source srcset="./images.portfolio/Проект Prime/Проект Prime-desk1x.webp 1x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Проект Prime/Проект Prime-desk2x.webp 2x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Проект Prime/Проект Prime-desk1x.jpg 1x,
+                ./images.portfolio/Проект Prime/Проект Prime-desk2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
+                <source srcset="./images.portfolio/Проект Prime/Проект Prime-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Проект Prime/Проект Prime-tab2x.webp 2x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Проект Prime/Проект Prime-tab1x.jpg 1x,
+                ./images.portfolio/Проект Prime/Проект Prime-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
+                <source srcset="./images.portfolio/Проект Prime/Проект Prime-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Проект Prime/Проект Prime-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Проект Prime/Проект Prime-mob1x.jpg 1x,
+                ./images.portfolio/Проект Prime/Проект Prime-mob2x.jpg 2x" type="image/jpg" media="(max-width:767px)"> 
+                <img class="project__img" src="./images.portfolio/Проект Prime/Проект Prime-mob1x.jpg" alt="Проект Prime" width: 370; />
+                  </picture>
                   <p class="proect-list__text-hov">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -148,7 +260,21 @@
             <li class="proect-list__item">
               <a href="" class="proect-list__link">
                 <div class="proect-list__hov">
-                  <img class="project__img" src="./images.portfolio/Проект Boxes.jpg" alt="Проект Boxes" width: 370; />
+                  <picture>
+                    <source srcset="./images.portfolio/Проект Boxes/Проект Boxes-desk1x.webp 1x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Проект Boxes/Проект Boxes-desk2x.webp 2x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Проект Boxes/Проект Boxes-desk1x.jpg 1x,
+                ./images.portfolio/Проект Boxes/Проект Boxes-desk2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
+                <source srcset="./images.portfolio/Проект Boxes/Проект Boxes-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Проект Boxes/Проект Boxes-tab2x.webp 2x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Проект Boxes/Проект Boxes-tab1x.jpg 1x,
+                ./images.portfolio/Проект Boxes/Проект Boxes-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
+                <source srcset="./images.portfolio/Проект Boxes/Проект Boxes-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Проект Boxes/Проект Boxes-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Проект Boxes/Проект Boxes-mob1x.jpg 1x,
+                ./images.portfolio/Проект Boxes/Проект Boxes-mob2x.jpg 2x" type="image/jpg" media="(max-width:767px)"> 
+                <img class="project__img" src="./images.portfolio/Проект Boxes/Проект Boxes-mob1x.jpg" alt="Проект Boxes" width: 370; />
+                  </picture>
                   <p class="proect-list__text-hov">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -164,8 +290,22 @@
             <li class="proect-list__item">
               <a href="" class="proect-list__link">
                 <div class="proect-list__hov">
-                  <img class="project__img" src="./images.portfolio/Inspiration has no Borders.jpg" alt="Inspiration has
+                  <picture>
+                    <source srcset="./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-desk1x.webp 1x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-desk2x.webp 2x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-desk1x.jpg 1x,
+                ./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-desk2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
+                <source srcset="./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-tab2x.webp 2x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-tab1x.jpg 1x,
+                ./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
+                <source srcset="./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-mob1x.jpg 1x,
+                ./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-mob2x.jpg 2x" type="image/jpg" media="(max-width:767px)"> 
+                <img class="project__img" src="./images.portfolio/Inspiration has no Borders/Inspiration has no Borders-mob1x.jpg" alt="Inspiration has
                   no Borders" width: 370; />
+                  </picture>
                   <p class="proect-list__text-hov">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -183,8 +323,22 @@
             <li class="proect-list__item">
               <a href="" class="proect-list__link">
                 <div class="proect-list__hov">
-                  <img class="project__img" src="./images.portfolio/Издание Limited Edition.jpg" alt="Издание Limited
+                  <picture>
+                    <source srcset="./images.portfolio/Издание Limited Edition/Издание Limited Edition-desk1x.webp 1x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Издание Limited Edition/Издание Limited Edition-desk2x.webp 2x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Издание Limited Edition/Издание Limited Edition-desk1x.jpg 1x,
+                ./images.portfolio/Издание Limited Edition/Издание Limited Edition-desk2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
+                <source srcset="./images.portfolio/Издание Limited Edition/Издание Limited Edition-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Издание Limited Edition/Издание Limited Edition-tab2x.webp 2x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Издание Limited Edition/Издание Limited Edition-tab1x.jpg 1x,
+                ./images.portfolio/Издание Limited Edition/Издание Limited Edition-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
+                <source srcset="./images.portfolio/Издание Limited Edition/Издание Limited Edition-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Издание Limited Edition/Издание Limited Edition-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Издание Limited Edition/Издание Limited Edition-mob1x.jpg 1x,
+                ./images.portfolio/Издание Limited Edition/Издание Limited Edition-mob2x.jpg 2x" type="image/jpg" media="(max-width:767px)"> 
+<img class="project__img" src="./images.portfolio/Издание Limited Edition/Издание Limited Edition-mob1x.jpg" alt="Издание Limited
                   Edition" width: 370; />
+                  </picture>
                   <p class="proect-list__text-hov">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -200,7 +354,21 @@
             <li class="proect-list__item">
               <a href="" class="proect-list__link">
                 <div class="proect-list__hov">
-                  <img class="project__img" src="./images.portfolio/Проект LAB.jpg" alt="Проект LAB" width: 370; />
+                  <picture>
+                    <source srcset="./images.portfolio/Проект LAB/Проект LAB-desk1x.webp 1x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Проект LAB/Проект LAB-desk2x.webp 2x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Проект LAB/Проект LAB-desk1x.jpg 1x,
+                ./images.portfolio/Проект LAB/Проект LAB-desk2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
+                <source srcset="./images.portfolio/Проект LAB/Проект LAB-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Проект LAB/Проект LAB-tab2x.webp 2x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Проект LAB/Проект LAB-tab1x.jpg 1x,
+                ./images.portfolio/Проект LAB/Проект LAB-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
+                <source srcset="./images.portfolio/Проект LAB/Проект LAB-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Проект LAB/Проект LAB-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Проект LAB/Проект LAB-mob1x.jpg 1x,
+                ./images.portfolio/Проект LAB/Проект LAB-mob2x.jpg 2x" type="image/jpg" media="(max-width:767px)"> 
+                   <img class="project__img" src="./images.portfolio/Проект LAB/Проект LAB-mob1x.jpg" alt="Проект LAB" width: 370; />
+              </picture>
                   <p class="proect-list__text-hov">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -216,8 +384,22 @@
             <li class="proect-list__item">
               <a href="" class="proect-list__link">
                 <div class="proect-list__hov">
-                  <img class="project__img" src="./images.portfolio/Growing Business.jpg" alt="Growing Business" width:
+                  <picture>
+                     <source srcset="./images.portfolio/Growing Business/Growing Business-desk1x.webp 1x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Growing Business/Growing Business-desk2x.webp 2x" type="image/webp" media="(min-width:1200px)">
+                <source srcset="./images.portfolio/Growing Business/Growing Business-desk1x.jpg 1x,
+                ./images.portfolio/Growing Business/Growing Business-desk2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
+                <source srcset="./images.portfolio/Growing Business/Growing Business-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Growing Business/Growing Business-tab2x.webp 2x" type="image/webp" media="(min-width:768px)">
+                <source srcset="./images.portfolio/Growing Business/Growing Business-tab1x.jpg 1x,
+                ./images.portfolio/Growing Business/Growing Business-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
+                <source srcset="./images.portfolio/Growing Business/Growing Business-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Growing Business/Growing Business-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
+                <source srcset="./images.portfolio/Growing Business/Growing Business-mob1x.jpg 1x,
+                ./images.portfolio/Growing Business/Growing Business-mob2x.jpg 2x" type="image/jpg" media="(max-width:767px)"> 
+<img class="project__img" src="./images.portfolio/Growing Business/Growing Business-mob1x.jpg" alt="Growing Business" width:
                   370; />
+                  </picture>
                   <p class="proect-list__text-hov">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании

@@ -23,65 +23,16 @@
     
   </head>
   <body>
-    <header class="header">
+  <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
-        <div class="tel-nav">
- <button type="button" class="menu-open-btn">
-                <svg class="menu-icon" width="40" height="40"
-                aria-label="Перемикач мобільного меню">
-                  <use href="./images/icon.svg#icon-menu"></use>
-                </svg>
-                <svg class="menu-icon-close" width="18.67" height="18.67"
-                aria-label="Перемикач мобільного меню">
-                  <use href="./images/icon.svg#icon-close"></use>
-                </svg>
-              </button>
-               
-                <div class="mob-menu is-hidden">
-                  <div class="container">
-                  <button type="button" class="menu-close-btn">
-                <svg class="menu-icon-close" width="18.67" height="18.67"
-                aria-label="Перемикач мобільного меню">
-                  <use href="./images/icon.svg#icon-close"></use>
-                </svg>
-                  </button>
-                  <ul class="mob-site-nav list">
-            <li class="mob-site-nav__item">
-              <a href="./index.html" class="mob-site-nav__link mob-site-nav__link--current">Студия</a>
-            </li>
-            <li class="mob-site-nav__item">
-              <a href="./portfolio.html" class="mob-site-nav__link">Портфолио</a>
-            </li>
-            <li class="mob-site-nav__item">
-              <a href="" class="mob-site-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="mob-connect-list list">
-          <li class="mob-connect-list__item">
-            <a href="mailto:info@devstudio.com" class="mob-connect-list-email__link">info@devstudio.com
-            </a>
-          </li>
-          <li class="mob-connect-list__item">
-            <a href="tel:+380961111111" class="mob-connect-list-tel__link">+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-        <ul class="mob-soc list">
-          <li class="mob-soc__item"><a href class="mob-soc__link">Instagram</a></li>
-          <li class="mob-soc__item"><a href class="mob-soc__link">Twitter</a></li>
-          <li class="mob-soc__item"><a href class="mob-soc__link">Facebook</a></li>
-          <li class="mob-soc__item"><a href class="mob-soc__link">LinkedIn</a></li>
-        </ul>
-                  </div>
-                </div>
-        </div>
-       
-
-
-            
-        <nav class="header-nav">
+        <button type="button" class="mob-menu__open-btn open-menu" aria-expanded="false">
+          <svg class="mob-menu__open-icon" width="40px" height="40px">
+<use href="./images/icon.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="header-box">
+<nav class="header-nav">
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
@@ -111,6 +62,54 @@
             >
           </li>
         </ul>
+        </div>
+        
+<div class="mob-menu menu-container">
+<button type="button" class="mob-menu__close-btn close-menu">
+<svg class="mob-menu__open-icon" width="40px" height="40px">
+  <use href="./images/icon.svg#icon-close"></use>
+</svg>
+</button>
+<ul class="mob-menu__list">
+<li class="mob-menu__item">
+<a href="./index.html" class="mob-menu__link mob-menu__link--current">Студия</a>
+</li>
+<li class="mob-menu__item">
+<a href="./portfolio.html" class="mob-menu__link">Портфолио</a>
+</li>
+<li class="mob-menu__item">
+<a href="" class="mob-menu__link">Контакты</a>
+</li>
+</ul>
+<div class="mob-menu__contacts">
+<ul class="mob-contacts">
+              <li class="mob-contacts__item">
+                <a href="tel:+380961111111" class="mob-contacts__link-tel">+38 096 111 11 11 </a>
+              </li>
+              <li class="mob-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mob-contacts__link-mail"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-menu__social">
+              <li class="mob-menu__social-item">
+                <a class="mob-menu__social-link" href="">Instagram</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a class="mob-menu__social-link" href="">Twitter</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a class="mob-menu__social-link" href="">Facebook</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a class="mob-menu__social-link" href="">LinkedIn</a>
+              </li>
+            </ul>
+</div>
+</div>
+</div>
+
       </div>
     </header>
     <main>
@@ -288,15 +287,15 @@
                 <source srcset="./images/Игорь/photo-desk1x.webp 1x" type="image/webp" media="(min-width:1200px)">
                 <source srcset="./images/Игорь/photo-desk2x.webp 2x" type="image/webp" media="(min-width:1200px)">
                 <source srcset="./images/Игорь/photo-desk1x.jpg 1x,
-                ./images/Игорь/photo-desk1x.jpg 2x" media="(min-width:1200px)"> 
+                ./images/Игорь/photo-desk2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
                 <source srcset="./images/Игорь/photo-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
                 <source srcset="./images/Игорь/photo-tab2x.webp 2x" type="image/webp" media="(min-width:768px)">
                 <source srcset="./images/Игорь/photo-tab1x.jpg 1x,
-                ./images/Игорь/photo-tab2x.jpg 2x" media="(min-width:768px)"> 
+                ./images/Игорь/photo-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
                 <source srcset="./images/Игорь/photo-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
                 <source srcset="./images/Игорь/photo-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
                 <source srcset="./images/Игорь/photo-mob1x.jpg 1x,
-                ./images/Игорь/photo-mob2x.jpg 2x" media="(max-width:767px)"> 
+                ./images/Игорь/photo-mob2x.jpg 2x" type="image/jpg" media="(max-width:767px)"> 
 <img class="team__img" 
                 src="./images/Игорь/photo-mob1x.jpg"
                 alt="фото-Игорь-Демьяненко"
@@ -342,15 +341,15 @@
                 <source srcset="./images/Ольга/photo-2-desk1x.webp 1x" type="image/webp" media="(min-width:1200px)">
                 <source srcset="./images/Ольга/photo-2-desk2x.webp 2x" type="image/webp" media="(min-width:1200px)">
                 <source srcset="./images/Ольга/photo-2-desk1x.jpg 1x,
-                ./images/Ольга/photo-2-desk2x.jpg 2x" media="(min-width:1200px)"> 
+                ./images/Ольга/photo-2-desk2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
                  <source srcset="./images/Ольга/photo-2-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
                 <source srcset="./images/Ольга/photo-2-tab2x.webp 2x" type="image/webp" media="(max-min-width:768px)">
                 <source srcset="./images/Ольга/photo-2-tab1x.jpg 1x,
-                ./images/Ольга/photo-2-tab2x.jpg 2x" media="(min-width:768px)"> 
+                ./images/Ольга/photo-2-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
                 <source srcset="./images/Ольга/photo-2-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
                 <source srcset="./images/Ольга/photo-2-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
                 <source srcset="./images/Ольга/photo-2-mob1x.jpg 1x,
-                ./images/Ольга/photo-2-mob2x.jpg 2x"  media="(max-width:767px)"> 
+                ./images/Ольга/photo-2-mob2x.jpg 2x" type="image/jpg"  media="(max-width:767px)"> 
 <img class="team__img"  src="./images/Ольга/photo-2-mob1x.jpg" alt="фото-Ольга-Репина" />
               </picture>
               <div class="team__description">
@@ -393,15 +392,15 @@
                  <source srcset="./images/Николай/photo-3-desc1x.webp 1x" type="image/webp" media="(min-width:1200px)">
                 <source srcset="./images/Николай/photo-3-desc2x.webp 2x" type="image/webp" media="(min-width:1200px)">
                 <source srcset="./images/Николай/photo-3-desc1x.jpg 1x,
-                ./images/Николай/photo-3-desc2x.jpg 2x" media="(min-width:1200px)"> 
+                ./images/Николай/photo-3-desc2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
                 <source srcset="./images/Николай/photo-3-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
                 <source srcset="./images/Николай/photo-3-tab2x.webp 2x" type="image/webp" media="(min-width:768px)">
                 <source srcset="./images/Николай/photo-3-tab1x.jpg 1x,
-                ./images/Николай/photo-3-tab2x.jpg 2x" media="(min-width:768px)"> 
+                ./images/Николай/photo-3-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
                 <source srcset="./images/Николай/photo-3-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
                 <source srcset="./images/Николай/photo-3-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
                 <source srcset="./images/Николай/photo-3-mob1x.jpg 1x,
-                ./images/Николай/photo-3-mob2x.jpg 2x" media="(max-width:767px)"> 
+                ./images/Николай/photo-3-mob2x.jpg 2x" type="image/jpg" media="(max-width:767px)"> 
               <img class="team__img" src="./images/Николай/photo-3-mob1x.jpg" alt="фото-Николай-Тарасов"/>
               </picture>
             <div class="team__description">
@@ -443,16 +442,16 @@
               <picture>
                 <source srcset="./images/Михаил/photo-4-desk1x.webp 1x" type="image/webp" media="(min-width:1200px)">
                 <source srcset="./images/Михаил/photo-4-desk2x.webp 2x" type="image/webp" media="(min-width:1200px)">
-                <source srcset="./images/Михаил/photo-4-desk2x.jpg 1x,
-                ./images/Михаил/photo-4-desk1x.jpg 2x" media="(min-width:1200px)"> 
+                <source srcset="./images/Михаил/photo-4-desk1x.jpg 1x,
+                ./images/Михаил/photo-4-desk2x.jpg 2x" type="image/jpg" media="(min-width:1200px)"> 
                  <source srcset="./images/Михаил/photo-4-tab1x.webp 1x" type="image/webp" media="(min-width:768px)">
                 <source srcset="./images/Михаил/photo-4-tab2x.webp 2x" type="image/webp" media="(max-min-width:768px)">
                 <source srcset="./images/Михаил/photo-4-tab1x.jpg 1x,
-                ./images/Михаил/photo-4-tab2x.jpg 2x" media="(min-width:768px)"> 
+                ./images/Михаил/photo-4-tab2x.jpg 2x" type="image/jpg" media="(min-width:768px)"> 
                 <source srcset="./images/Михаил/photo-4-mob1x.webp 1x" type="image/webp" media="(max-width:767px)">
                 <source srcset="./images/Михаил/photo-4-mob2x.webp 2x" type="image/webp" media="(max-width:767px)">
                 <source srcset="./images/Михаил/photo-4-mob1xjpg 1x,
-                ./images/Михаил/photo-4-mob2xjpg 2x"  media="(max-width:767px)"> 
+                ./images/Михаил/photo-4-mob2xjpg 2x" type="image/jpg" media="(max-width:767px)"> 
                 <img class="team__img" src="./images/Михаил/photo-4-mob1x.jpg" alt="фото-Михаил-Ермаков"/>
               </picture>
 <div class="team__description">

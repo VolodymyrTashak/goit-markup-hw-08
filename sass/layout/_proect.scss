@@ -104,6 +104,11 @@
 .proect-list__title {
   @include font(18px, 2, 700, 0.06em);
   color: var(--main-first-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 306px;
+    height: 72px;
+  }
 }
 
 .proect-list__text {
@@ -112,6 +117,6 @@
 }
 
 .proect-list__description {
-  padding: 20px 24px;
+  padding: 20px 22px;
   border: 1px solid #eeeeee;
 }
