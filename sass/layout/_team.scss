@@ -4,17 +4,6 @@ background-color: var(--team-bcg-color);
 @media screen and (max-width: 767px) {
     display: block;
   }
-
-  @media screen and (min-width: 768px) {
-     display: flex;
-    flex-wrap: wrap;
-  }
-
-   @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 0px;
-  }
 }
 
  .team{
@@ -94,9 +83,6 @@ text-align: center;
 .team__description{
     padding-top: 30px;
     padding-bottom: 30px;  
-    @media screen and (max-width: 767px) {
-margin-bottom: 30px;
-    }
 }
  }
 

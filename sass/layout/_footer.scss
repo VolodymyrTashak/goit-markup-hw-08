@@ -16,16 +16,24 @@ background-color: var(--footer-bcg-color)
 }
 
 .footer-nav{
+@media screen and (max-width:767px) {
+    margin-bottom: 60px;
+}
 
+@media screen and (min-width:768px) and (max-width:1199px) {
+  text-align:center;
+}
 }
 
 .footer-contact{
-     @media screen and (min-width: 768px) {
-    display: flex;
-    width: 594px;
-    justify-content: space-between;
+     @media screen and (max-width: 767px) {
     margin: 0 auto 60px;
-       flex-grow: 1;
+     }
+
+     @media screen and (min-width: 768px) {
+         display: flex;
+         justify-content: space-around;
+         margin-bottom: 60px;
      }
 
       @media screen and (min-width: 1200px) {
@@ -39,10 +47,6 @@ background-color: var(--footer-bcg-color)
     font-style: normal;
     
     @media screen and (max-width: 767px) {
-   width: 232px;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 60px;
    text-align: center; 
 }
 

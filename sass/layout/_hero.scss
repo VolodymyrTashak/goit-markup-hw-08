@@ -7,9 +7,14 @@ background-size: cover;
 margin-right: auto;
 margin-left: auto;
     max-width: 1600px;
-padding-top: 200px;
-padding-bottom: 200px;
+padding-top: 118px;
+padding-bottom: 118px;
     text-align: center;
+
+@media screen and (min-width: 1200px) {
+   padding-top: 200px;
+padding-bottom: 200px; 
+}
 
     @media (min-device-pixel-ratio: 2) ,
     (min-resolution: 192dpi) , 
@@ -40,11 +45,13 @@ padding-bottom: 200px;
     color:var(--hero-title-color);
     font-family: 'Roboto', sans-serif;
 text-transform: uppercase;
+margin: 0px auto 30px auto;
+width: 360px;
 
 @media screen and (min-width:1200px) {
     @include font(44px, 1.37, null, null);
     width: 696px;
-margin: 0px auto 30px auto;
+
 }
 
 }
