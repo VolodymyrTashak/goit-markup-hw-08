@@ -1,13 +1,15 @@
 .section .section__no-padding{
 
- @media screen and (max-width: 1199px) {
-        display: none;
-    }
-
     @media screen and (min-width:1200px) {
         padding-top: 0px;
     }
 
+}
+
+.section--work{
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .work{

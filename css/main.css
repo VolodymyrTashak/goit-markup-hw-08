@@ -847,14 +847,15 @@ img {
   color: var(--main-second-color);
 }
 
-@media screen and (max-width: 1199px) {
-  .section .section__no-padding {
-    display: none;
-  }
-}
 @media screen and (min-width: 1200px) {
   .section .section__no-padding {
     padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section--work {
+    display: none;
   }
 }
 
