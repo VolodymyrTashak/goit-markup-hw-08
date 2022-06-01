@@ -1494,7 +1494,6 @@ img {
   letter-spacing: 0.03em;
   position: absolute;
   top: 0;
-  margin-top: 30px;
   color: var(--second-btn-color);
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
