@@ -18,6 +18,14 @@
 
 .proect-list__item {
   margin-bottom: 30px;
+
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    &:nth-child(1) .proect-list__description{
+    padding-bottom: 56px;
+  }
+  }
+  
+
   @media screen and (min-width: 768px) {
     margin-left: 30px;
     margin-bottom: 30px;
@@ -30,8 +38,9 @@
      flex-basis: calc((100% - 90px) / 3);
     // flex-basis: calc((100% - 3 * 15px) / 3);
   }
-}
 
+  
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   // .proect-list__item:not(:nth-of-type(2n)) {
