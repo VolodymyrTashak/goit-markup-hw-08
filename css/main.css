@@ -1065,6 +1065,18 @@ img {
   .client__item:nth-last-of-type(n + 4) {
     margin-bottom: 30px;
   }
+  .client__item:first-child {
+    margin-left: 0px;
+  }
+  .client__item:nth-child(3) {
+    margin-right: 0px;
+  }
+  .client__item:nth-child(4) {
+    margin-left: 0px;
+  }
+  .client__item:last-child {
+    margin-right: 0px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .client__item {
